@@ -4,6 +4,7 @@
 #include "RCcircuit.h"
 #include "afxdialogex.h"
 #include "CSelectModeDlg.h"
+#include "CImageProcessDlg.h"
 
 
 // CSelectModeDlg 대화 상자
@@ -27,10 +28,15 @@ void CSelectModeDlg::DoDataExchange(CDataExchange* pDX)
 
 
 BEGIN_MESSAGE_MAP(CSelectModeDlg, CDialogEx)
-	ON_BN_CLICKED(IDC_BTN_SIMULATE, &CSelectModeDlg::OnBnClickedBtnSimulate)
+    ON_BN_CLICKED(IDC_BTN_SIMULATE, &CSelectModeDlg::OnBnClickedImageProcess)
     ON_BN_CLICKED(IDC_BTN_CIRCUIT, &CSelectModeDlg::OnBnClickedBtnCircuit)
 END_MESSAGE_MAP()
 
+void CSelectModeDlg::OnBnClickedImageProcess()
+{
+    CImageProcessDlg dlg;
+    dlg.DoModal();
+}
 
 // 이미지 처리기 부분
 

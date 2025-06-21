@@ -13,6 +13,8 @@ public:
     CSelectModeDlg(CWnd* pParent = nullptr);
     virtual ~CSelectModeDlg();
 
+    afx_msg void OnBnClickedImageProcess();  //버튼클릭-이미지처리 다이얼로그 전환
+
 #ifdef AFX_DESIGN_TIME
     enum { IDD = IDD_SELECT_MODE };
 #endif

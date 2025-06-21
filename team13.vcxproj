@@ -103,7 +103,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions),_AFXDLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -128,6 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CImageProcessDlg.cpp" />
     <ClCompile Include="CSelectModeDlg.cpp" />
     <ClCompile Include="imageYUEE.cpp" />
     <ClCompile Include="RCcircuit.cpp" />
@@ -135,6 +136,7 @@
     <ClCompile Include="Team13App.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CImageProcessDlg.h" />
     <ClInclude Include="CSelectModeDlg.h" />
     <ClInclude Include="imageYUEE.h" />
     <ClInclude Include="pch.h" />
